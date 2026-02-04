@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Migrations\\20260204193224_PopulaCategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:APICatalogo\\Migrations\\20260204193224_PopulaCategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Migrations\\20260204194027_PopulaProdutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:APICatalogo\\Migrations\\20260204194027_PopulaProdutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51EBD5A0-FA71-BF41-FADA-815DEE748B54}|APICatalogo\\APICatalogo.csproj|c:\\users\\ccfel\\onedrive\\meu computador (galaxy book 4)\\documents\\github\\webapi-aspnet\\apicatalogo\\apicatalogo\\migrations\\20260204193224_populacategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51EBD5A0-FA71-BF41-FADA-815DEE748B54}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\migrations\\20260204193224_populacategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51EBD5A0-FA71-BF41-FADA-815DEE748B54}|APICatalogo\\APICatalogo.csproj|c:\\users\\ccfel\\onedrive\\meu computador (galaxy book 4)\\documents\\github\\webapi-aspnet\\apicatalogo\\apicatalogo\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,11 +67,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20260204194027_PopulaProdutos.cs",
+              "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Migrations\\20260204194027_PopulaProdutos.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Migrations\\20260204194027_PopulaProdutos.cs",
+              "ToolTip": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Migrations\\20260204194027_PopulaProdutos.cs*",
+              "RelativeToolTip": "APICatalogo\\Migrations\\20260204194027_PopulaProdutos.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T19:40:27.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "20260204193224_PopulaCategorias.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Migrations\\20260204193224_PopulaCategorias.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Migrations\\20260204193224_PopulaCategorias.cs",
-              "ToolTip": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Migrations\\20260204193224_PopulaCategorias.cs*",
-              "RelativeToolTip": "APICatalogo\\Migrations\\20260204193224_PopulaCategorias.cs*",
+              "ToolTip": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Migrations\\20260204193224_PopulaCategorias.cs",
+              "RelativeToolTip": "APICatalogo\\Migrations\\20260204193224_PopulaCategorias.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T19:32:24.407Z",
@@ -75,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "20260204191350_MigracaoInicial.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Migrations\\20260204191350_MigracaoInicial.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Migrations\\20260204191350_MigracaoInicial.cs",
@@ -87,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Context\\AppDbContext.cs",
@@ -99,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Models\\Categoria.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Models\\Categoria.cs",
@@ -111,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Program.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Program.cs",
@@ -123,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "APICatalogo.csproj",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
               "RelativeDocumentMoniker": "APICatalogo\\APICatalogo.csproj",
@@ -135,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Models\\Produto.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Models\\Produto.cs",
@@ -143,12 +160,11 @@
               "RelativeToolTip": "APICatalogo\\Models\\Produto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T19:23:31.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T19:23:31.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\appsettings.json",
               "RelativeDocumentMoniker": "APICatalogo\\appsettings.json",
@@ -160,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "APICatalogo\\Properties\\launchSettings.json",
