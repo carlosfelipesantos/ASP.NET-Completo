@@ -1,4 +1,5 @@
 using APICatalogo.Context;
+using APICatalogo.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
@@ -15,6 +16,7 @@ string sqlServerConnection = builder.Configuration.GetConnectionString("DefaultC
 builder.Services.AddDbContext<AppDbContext>(options => //adicionando o contexto do banco de dados ao contêiner de serviços
     options.UseSqlServer(sqlServerConnection));
 
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>(); //registrando o repositório de categorias no contêiner de serviços, para que ele possa ser injetado nos controladores
 
 var app = builder.Build();
 
