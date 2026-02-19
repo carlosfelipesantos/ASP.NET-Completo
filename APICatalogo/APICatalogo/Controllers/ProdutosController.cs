@@ -1,5 +1,6 @@
 ﻿using APICatalogo.Context;
 using APICatalogo.Models;
+using APICatalogo.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,7 +10,7 @@ namespace APICatalogo.Controllers
     [ApiController]
     public class ProdutosController : ControllerBase //controller serve para criar endpoints de API, endpoints são as rotas que a API vai expor
     {
-        private readonly AppDbContext _context; //injeção de dependência do contexto do banco de dados, para acessar os dados do banco
+        private readonly IProdutoRepository _repository; //injetando o repositório de produtos no controlador, para que ele possa ser usado para acessar os dados dos produtos
 
         public ProdutosController(AppDbContext context)
         {
