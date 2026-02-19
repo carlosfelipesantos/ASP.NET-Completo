@@ -12,16 +12,16 @@ namespace APICatalogo.Controllers
     {
         private readonly IProdutoRepository _repository; //injetando o repositório de produtos no controlador, para que ele possa ser usado para acessar os dados dos produtos
 
-        public ProdutosController(AppDbContext context)
+        public ProdutosController(IProdutoRepository repository)
         {
-            _context = context;
+            _repository = repository;
         }
 
         //primeiro mettodo action
         [HttpGet]
         public ActionResult<IEnumerable<Produto>> Get()
         {
-            var produtos = _context.Produtos.ToList();
+            var produtos = _repository.GetProdutos().ToList();
             if(produtos.Count == 0)
             {
                 return NotFound("Nenhum produto encontrado");
@@ -32,7 +32,7 @@ namespace APICatalogo.Controllers
         [HttpGet("{id:int}")]
         public ActionResult<Produto> Get(int id)
         {
-            var produto = _context.Produtos.Find(id);
+            var produto = _repository.GetProduto(id);
             if (produto is null)
             {
                 return NotFound("Nenhum produto encontrado pelo id");
@@ -43,9 +43,9 @@ namespace APICatalogo.Controllers
         [HttpPost ]
         public ActionResult<Produto> Post(Produto produto)
         {
-            _context.Produtos.Add(produto);
-            _context.SaveChanges();
-            return CreatedAtAction(nameof(Get), new { id = produto.ProdutoId }, produto);
+            var novoProduto = _repository.Create(produto);
+          
+            return CreatedAtAction(nameof(Get), new { id = novoProduto.ProdutoId }, novoProduto);
         }
 
         [HttpPut("{id:int}")]
@@ -55,21 +55,15 @@ namespace APICatalogo.Controllers
             {
                 return BadRequest("Id do produto não corresponde ao id da URL");
             }
-            _context.Entry(produto).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-            _context.SaveChanges();
+            _repository.Update(produto);
             return Ok(produto);
         }
 
         [HttpDelete("{id:int}")]
         public ActionResult<Produto> Delete(int id)
         {
-            var produto = _context.Produtos.Find(id);
-            if(produto is null)
-            {
-                return NotFound("Produto não encontrado para o id informado");
-            }
-            _context.Produtos.Remove(produto);
-            _context.SaveChanges();
+           var produto = _repository.Delete(id);
+          
             return Ok(produto);
         }
 
