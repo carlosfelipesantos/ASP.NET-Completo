@@ -10,9 +10,9 @@ namespace APICatalogo.Controllers
     [ApiController]
     public class ProdutosController : ControllerBase //controller serve para criar endpoints de API, endpoints são as rotas que a API vai expor
     {
-        private readonly IProdutoRepository _repository; //injetando o repositório de produtos no controlador, para que ele possa ser usado para acessar os dados dos produtos
+        private readonly IRepository<Produto> _repository; //injetando o repositório de produtos no controlador, para que ele possa ser usado para acessar os dados dos produtos
 
-        public ProdutosController(IProdutoRepository repository)
+        public ProdutosController(IRepository<Produto> repository)
         {
             _repository = repository;
         }
@@ -21,7 +21,7 @@ namespace APICatalogo.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Produto>> Get()
         {
-            var produtos = _repository.GetProdutos().ToList();
+            var produtos = _repository.GetAll().ToList();
             if(produtos.Count == 0)
             {
                 return NotFound("Nenhum produto encontrado");
@@ -32,7 +32,7 @@ namespace APICatalogo.Controllers
         [HttpGet("{id:int}")]
         public ActionResult<Produto> Get(int id)
         {
-            var produto = _repository.GetProduto(id);
+            var produto = _repository.GetById(id);
             if (produto is null)
             {
                 return NotFound("Nenhum produto encontrado pelo id");

@@ -12,9 +12,9 @@ namespace APICatalogo.Controllers
     public class CategoriasController : ControllerBase
     {
 
-        private readonly ICategoriaRepository _repository; //injeção do repositório para acessar os dados
+        private readonly IRepository<Categoria> _repository; //injeção do repositório para acessar os dados
 
-        public CategoriasController(ICategoriaRepository repository) //pedindo injecao do contexto que sera informada pelo container di nativo
+        public CategoriasController(IRepository<Categoria> repository) //pedindo injecao do contexto que sera informada pelo container di nativo
         {
             _repository = repository;
         }
@@ -23,7 +23,7 @@ namespace APICatalogo.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Categoria>> Get()
         {
-            var categorias = _repository.GetCategorias();
+            var categorias = _repository.GetAll();
             return Ok(categorias);
         }
 
@@ -32,7 +32,7 @@ namespace APICatalogo.Controllers
         [HttpGet("{id:int}", Name = "ObterCategoria")]
         public ActionResult<Categoria> Get(int id)
         {
-            var categoria = _repository.GetCategoria(id);
+            var categoria = _repository.GetById(id);
             if (categoria is null)
             {
                 return NotFound("Nenhuma categoria encontrada pelo id");
@@ -45,7 +45,7 @@ namespace APICatalogo.Controllers
         public ActionResult<Categoria> Post(Categoria categoria)
         {
          
-            var categoriaCriada = _repository.CreateCategoria(categoria);
+            var categoriaCriada = _repository.Create(categoria);
 
             return CreatedAtRoute("ObterCategoria", new { id = categoriaCriada.CategoriaId }, categoriaCriada);
 
@@ -59,7 +59,7 @@ namespace APICatalogo.Controllers
                 return BadRequest("Id da categoria não corresponde ao id da URL");
             }
    
-            _repository.UpdateCategoria(categoria);
+            _repository.Update(categoria);
             return Ok(categoria);
 
         }   
@@ -67,13 +67,13 @@ namespace APICatalogo.Controllers
         [HttpDelete("{id:int}")]
         public ActionResult Delete(int id)
         {
-            var categoria = _repository.GetCategoria(id);
+            var categoria = _repository.GetById(id);
             if (categoria is null)
             {
                 return NotFound("Nenhuma categoria encontrada pelo id");
             }
 
-            var categoriaExcluida = _repository.DeleteCategoria(id);
+            var categoriaExcluida = _repository.Delete(id);
             return Ok(categoriaExcluida);
 
         }
