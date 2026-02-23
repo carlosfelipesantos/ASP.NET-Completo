@@ -20,6 +20,8 @@ builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>(); //regis
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>)); //registrando o repositório genérico no contêiner de serviços, para que ele possa ser injetado nos controladores
 
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>(); //registrando a unidade de trabalho no contêiner de serviços, para que ela possa ser injetada nos controladores
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

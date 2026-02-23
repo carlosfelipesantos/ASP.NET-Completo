@@ -1,4 +1,5 @@
 ﻿using APICatalogo.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace APICatalogo.Repositories
 {
@@ -14,7 +15,7 @@ namespace APICatalogo.Repositories
 
         public IEnumerable<T> GetAll()
         {
-          return _context.Set<T>().ToList(); //set serve para acessar uma colecao ou uma tabela do banco de dados, e tolist para converter o resultado em uma lista
+          return _context.Set<T>().AsNoTracking().ToList(); //set serve para acessar uma colecao ou uma tabela do banco de dados, e tolist para converter o resultado em uma lista
         }
 
         public T GetById(int id)
@@ -26,14 +27,14 @@ namespace APICatalogo.Repositories
         public T Create(T entity)
         {
             _context.Set<T>().Add(entity);
-            _context.SaveChanges();
+           // _context.SaveChanges();
             return entity;
         }
 
         public T Update(T entity)
         {
            _context.Set<T>().Update(entity);
-            _context.SaveChanges();
+          //  _context.SaveChanges();
             return entity;
         }
 
@@ -41,7 +42,7 @@ namespace APICatalogo.Repositories
         public T Delete(int id)
         {
            _context.Set<T>().Remove(GetById(id));
-            _context.SaveChanges();
+          //  _context.SaveChanges();
             return GetById(id);
         }
 

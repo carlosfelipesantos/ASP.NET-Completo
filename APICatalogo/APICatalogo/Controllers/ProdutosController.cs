@@ -10,18 +10,19 @@ namespace APICatalogo.Controllers
     [ApiController]
     public class ProdutosController : ControllerBase //controller serve para criar endpoints de API, endpoints são as rotas que a API vai expor
     {
-        private readonly IRepository<Produto> _repository; //injetando o repositório de produtos no controlador, para que ele possa ser usado para acessar os dados dos produtos
+        private readonly IUnitOfWork _unitOfWork;
 
-        public ProdutosController(IRepository<Produto> repository)
+        public ProdutosController(IUnitOfWork unitOfWork)
         {
-            _repository = repository;
+            _unitOfWork = unitOfWork;
         }
+
 
         //primeiro mettodo action
         [HttpGet]
         public ActionResult<IEnumerable<Produto>> Get()
         {
-            var produtos = _repository.GetAll().ToList();
+            var produtos = _unitOfWork.ProdutoRepository.GetAll().ToList();
             if(produtos.Count == 0)
             {
                 return NotFound("Nenhum produto encontrado");
@@ -32,7 +33,7 @@ namespace APICatalogo.Controllers
         [HttpGet("{id:int}")]
         public ActionResult<Produto> Get(int id)
         {
-            var produto = _repository.GetById(id);
+            var produto = _unitOfWork.ProdutoRepository.GetById(id);
             if (produto is null)
             {
                 return NotFound("Nenhum produto encontrado pelo id");
@@ -43,7 +44,7 @@ namespace APICatalogo.Controllers
         [HttpPost ]
         public ActionResult<Produto> Post(Produto produto)
         {
-            var novoProduto = _repository.Create(produto);
+            var novoProduto = _unitOfWork.ProdutoRepository.Create(produto);
           
             return CreatedAtAction(nameof(Get), new { id = novoProduto.ProdutoId }, novoProduto);
         }
@@ -55,14 +56,14 @@ namespace APICatalogo.Controllers
             {
                 return BadRequest("Id do produto não corresponde ao id da URL");
             }
-            _repository.Update(produto);
+            _unitOfWork.ProdutoRepository.Update(produto);
             return Ok(produto);
         }
 
         [HttpDelete("{id:int}")]
         public ActionResult<Produto> Delete(int id)
         {
-           var produto = _repository.Delete(id);
+           var produto = _unitOfWork.ProdutoRepository.Delete(id);
           
             return Ok(produto);
         }
