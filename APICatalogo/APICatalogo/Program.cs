@@ -18,6 +18,8 @@ builder.Services.AddDbContext<AppDbContext>(options => //adicionando o contexto 
 
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>(); //registrando o repositório de categorias no contêiner de serviços, para que ele possa ser injetado nos controladores
 
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>)); //registrando o repositório genérico no contêiner de serviços, para que ele possa ser injetado nos controladores
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
