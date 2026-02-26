@@ -1,5 +1,6 @@
 ﻿using APICatalogo.Context;
 using APICatalogo.DTOs;
+using APICatalogo.DTOs.Mappings;
 using APICatalogo.Models;
 using APICatalogo.Repositories;
 using Microsoft.AspNetCore.Http;
@@ -25,17 +26,7 @@ namespace APICatalogo.Controllers
         {
             var categorias = _unitOfWork.CategoriaRepository.GetAll();
 
-            var categoriasDto = new List<CategoriaDTO>();   
-            foreach (var categoria in categorias)
-                            {
-                var categoriaDto = new CategoriaDTO
-                {
-                    CategoriaId = categoria.CategoriaId,
-                    Nome = categoria.Nome,
-                    ImagemUrl = categoria.ImagemUrl
-                };
-                categoriasDto.Add(categoriaDto);
-            }
+           var categoriasDto = categorias.ToCategoriaDTOList(); //método de extensão para converter a lista de categorias em lista de categoriasDTO, para evitar expor as entidades diretamente na API
 
             return Ok(categoriasDto);
         }
@@ -51,13 +42,7 @@ namespace APICatalogo.Controllers
                 return NotFound("Nenhuma categoria encontrada pelo id");
             }
 
-            //mapeamento manual de Categoria para CategoriaDTO, para evitar expor a entidade diretamente na API
-            var categoriaDto = new CategoriaDTO
-            {
-                CategoriaId = categoria.CategoriaId,
-                Nome = categoria.Nome,
-                ImagemUrl = categoria.ImagemUrl
-            };
+            var categoriaDto2 = categoria.ToCategoriaDTO(); //método de extensão para converter a entidade categoria em categoriaDTO, para evitar expor as entidades diretamente na API
 
             return Ok(categoria);
 
@@ -67,23 +52,13 @@ namespace APICatalogo.Controllers
         public ActionResult<CategoriaDTO> Post(CategoriaDTO categoriaDto)
         {
             
-            var categoria = new Categoria
-            {
-                CategoriaId = categoriaDto.CategoriaId,
-                Nome = categoriaDto.Nome,
-                ImagemUrl = categoriaDto.ImagemUrl
-            };
+            var categoria = categoriaDto.ToCategoria(); //método de extensão para converter a categoriaDTO em entidade categoria, para evitar expor as entidades diretamente na API
 
             var categoriaCriada = _unitOfWork.CategoriaRepository.Create(categoria);
             _unitOfWork.Commit();//salva as alterações no banco de dados
 
 
-            var NovacategoriaDto = new CategoriaDTO
-            {
-                CategoriaId = categoriaCriada.CategoriaId,
-                Nome = categoriaCriada.Nome,
-                ImagemUrl = categoriaCriada.ImagemUrl
-            };
+            var novaCategoriaDto = categoriaCriada.ToCategoriaDTO(); //método de extensão para converter a entidade categoria criada em categoriaDTO, para evitar expor as entidades diretamente na API
 
             return CreatedAtRoute("ObterCategoria", new { id = categoriaCriada.CategoriaId }, categoriaCriada);
 
@@ -97,24 +72,13 @@ namespace APICatalogo.Controllers
                 return BadRequest("Id da categoria não corresponde ao id da URL");
             }
 
-            var categoria = new Categoria
-            {
-                CategoriaId = categoriaDto.CategoriaId,
-                Nome = categoriaDto.Nome,
-                ImagemUrl = categoriaDto.ImagemUrl
-            };
+            var categoria = categoriaDto.ToCategoria(); //método de extensão para converter a categoriaDTO em entidade categoria, para evitar expor as entidades diretamente na API
 
-           var categoriaAtualizada = _unitOfWork.CategoriaRepository.Update(categoria);
+            var categoriaAtualizada = _unitOfWork.CategoriaRepository.Update(categoria);
             _unitOfWork.Commit();
             
+            var categoriaAtualizadaDto = categoriaAtualizada.ToCategoriaDTO(); //método de extensão para converter a entidade categoria atualizada em categoriaDTO, para evitar expor as entidades diretamente na API
 
-            var categoriaAtualizadaDto = new CategoriaDTO
-            {
-                CategoriaId = categoriaAtualizada.CategoriaId,
-                Nome = categoriaAtualizada.Nome,
-                ImagemUrl = categoriaAtualizada.ImagemUrl
-            };
-           
             return Ok(categoriaAtualizadaDto);
 
         }   
@@ -132,12 +96,8 @@ namespace APICatalogo.Controllers
 
                 _unitOfWork.Commit();
     
-                var categoriaExcluidaDto = new CategoriaDTO
-                {
-                    CategoriaId = categoriaExcluida.CategoriaId,
-                    Nome = categoriaExcluida.Nome,
-                    ImagemUrl = categoriaExcluida.ImagemUrl
-                };
+           var categoriaExcluidaDto = categoriaExcluida.ToCategoriaDTO(); //método de extensão para converter a entidade categoria excluída em categoriaDTO, para evitar expor as entidades diretamente na API
+
             return Ok(categoriaExcluidaDto);
 
         }
