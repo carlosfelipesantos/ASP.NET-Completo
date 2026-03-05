@@ -1,4 +1,5 @@
 ﻿using APICatalogo.Context;
+using APICatalogo.DTOs;
 using APICatalogo.Models;
 using APICatalogo.Repositories;
 using Microsoft.AspNetCore.Http;
@@ -20,7 +21,7 @@ namespace APICatalogo.Controllers
 
         //primeiro mettodo action
         [HttpGet]
-        public ActionResult<IEnumerable<Produto>> Get()
+        public ActionResult<IEnumerable<ProdutoDTO>> Get()
         {
             var produtos = _unitOfWork.ProdutoRepository.GetAll().ToList();
             if(produtos.Count == 0)
@@ -31,7 +32,7 @@ namespace APICatalogo.Controllers
         }
 
         [HttpGet("{id:int}")]
-        public ActionResult<Produto> Get(int id)
+        public ActionResult<ProdutoDTO> Get(int id)
         {
             var produto = _unitOfWork.ProdutoRepository.GetById(id);
             if (produto is null)
@@ -42,26 +43,26 @@ namespace APICatalogo.Controllers
         }
 
         [HttpPost ]
-        public ActionResult<Produto> Post(Produto produto)
+        public ActionResult<ProdutoDTO> Post(ProdutoDTO produtoDto)
         {
-            var novoProduto = _unitOfWork.ProdutoRepository.Create(produto);
+            var novoProduto = _unitOfWork.ProdutoRepository.Create(produtoDto);
           
             return CreatedAtAction(nameof(Get), new { id = novoProduto.ProdutoId }, novoProduto);
         }
 
         [HttpPut("{id:int}")]
-        public ActionResult<Produto> Put(int id, Produto produto)
+        public ActionResult<ProdutoDTO> Put(int id, ProdutoDTO produtoDto)
         {
-            if(id != produto.ProdutoId)
+            if(id != produtoDto.ProdutoId)
             {
                 return BadRequest("Id do produto não corresponde ao id da URL");
             }
-            _unitOfWork.ProdutoRepository.Update(produto);
-            return Ok(produto);
+            _unitOfWork.ProdutoRepository.Update(produtoDto);
+            return Ok(produtoDto);
         }
 
         [HttpDelete("{id:int}")]
-        public ActionResult<Produto> Delete(int id)
+        public ActionResult<ProdutoDTO> Delete(int id)
         {
            var produto = _unitOfWork.ProdutoRepository.Delete(id);
           
