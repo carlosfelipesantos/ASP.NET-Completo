@@ -2,6 +2,7 @@
 using APICatalogo.DTOs;
 using APICatalogo.Models;
 using APICatalogo.Repositories;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +13,12 @@ namespace APICatalogo.Controllers
     public class ProdutosController : ControllerBase //controller serve para criar endpoints de API, endpoints são as rotas que a API vai expor
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
+
+        public ProdutosController(IMapper mapper)
+        {
+            _mapper = mapper;
+        }
 
         public ProdutosController(IUnitOfWork unitOfWork)
         {
@@ -28,7 +35,11 @@ namespace APICatalogo.Controllers
             {
                 return NotFound("Nenhum produto encontrado");
             }
-            return Ok(produtos);
+
+            //var destino = _mapper.Map<Destino>(origem);
+            var produtosDto = _mapper.Map<IEnumerable<ProdutoDTO>>(produtos);
+
+            return Ok(produtosDto);
         }
 
         [HttpGet("{id:int}")]
@@ -39,15 +50,25 @@ namespace APICatalogo.Controllers
             {
                 return NotFound("Nenhum produto encontrado pelo id");
             }
-            return Ok(produto);
+
+            //var destino = _mapper.Map<Destino>(origem);
+            var produtoDto = _mapper.Map<ProdutoDTO>(produto);
+
+            return Ok(produtoDto);
         }
 
         [HttpPost ]
         public ActionResult<ProdutoDTO> Post(ProdutoDTO produtoDto)
         {
-            var novoProduto = _unitOfWork.ProdutoRepository.Create(produtoDto);
-          
-            return CreatedAtAction(nameof(Get), new { id = novoProduto.ProdutoId }, novoProduto);
+            var produto = _mapper.Map<Produto>(produtoDto);
+                      
+
+            var novoProduto = _unitOfWork.ProdutoRepository.Create(produto);
+            _unitOfWork.Commit();
+
+            var novoProdutoDto = _mapper.Map<ProdutoDTO>(novoProduto);
+
+            return CreatedAtAction(nameof(Get), new { id = novoProdutoDto.ProdutoId }, novoProdutoDto);
         }
 
         [HttpPut("{id:int}")]
@@ -57,16 +78,24 @@ namespace APICatalogo.Controllers
             {
                 return BadRequest("Id do produto não corresponde ao id da URL");
             }
-            _unitOfWork.ProdutoRepository.Update(produtoDto);
-            return Ok(produtoDto);
+
+            var produto = _mapper.Map<Produto>(produtoDto);
+            var produtoAtualizado = _unitOfWork.ProdutoRepository.Update(produto);
+            _unitOfWork.Commit();
+
+            var produtoAtualizadoDto = _mapper.Map<ProdutoDTO>(produtoAtualizado);
+           
+            return Ok(produtoAtualizadoDto);
         }
 
         [HttpDelete("{id:int}")]
         public ActionResult<ProdutoDTO> Delete(int id)
         {
            var produto = _unitOfWork.ProdutoRepository.Delete(id);
-          
-            return Ok(produto);
+
+            var produtoDto = _mapper.Map<ProdutoDTO>(produto);
+
+            return Ok(produtoDto);
         }
 
     }

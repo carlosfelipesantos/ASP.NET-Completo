@@ -11,10 +11,6 @@
       "RelativeMoniker": "D:0:0:{51EBD5A0-FA71-BF41-FADA-815DEE748B54}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51EBD5A0-FA71-BF41-FADA-815DEE748B54}|APICatalogo\\APICatalogo.csproj|c:\\users\\ccfel\\onedrive\\meu computador (galaxy book 4)\\documents\\github\\webapi-aspnet\\apicatalogo\\apicatalogo\\dtos\\mappings\\produtodtomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51EBD5A0-FA71-BF41-FADA-815DEE748B54}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\dtos\\mappings\\produtodtomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{51EBD5A0-FA71-BF41-FADA-815DEE748B54}|APICatalogo\\APICatalogo.csproj|c:\\users\\ccfel\\onedrive\\meu computador (galaxy book 4)\\documents\\github\\webapi-aspnet\\apicatalogo\\apicatalogo\\dtos\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51EBD5A0-FA71-BF41-FADA-815DEE748B54}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\dtos\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -63,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{51EBD5A0-FA71-BF41-FADA-815DEE748B54}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51EBD5A0-FA71-BF41-FADA-815DEE748B54}|APICatalogo\\APICatalogo.csproj|c:\\users\\ccfel\\onedrive\\meu computador (galaxy book 4)\\documents\\github\\webapi-aspnet\\apicatalogo\\apicatalogo\\repositories\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51EBD5A0-FA71-BF41-FADA-815DEE748B54}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\repositories\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{51EBD5A0-FA71-BF41-FADA-815DEE748B54}|APICatalogo\\APICatalogo.csproj|c:\\users\\ccfel\\onedrive\\meu computador (galaxy book 4)\\documents\\github\\webapi-aspnet\\apicatalogo\\apicatalogo\\repositories\\icategoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51EBD5A0-FA71-BF41-FADA-815DEE748B54}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\repositories\\icategoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -106,61 +98,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IProdutoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Repositories\\IProdutoRepository.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Repositories\\IProdutoRepository.cs",
-              "ToolTip": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Repositories\\IProdutoRepository.cs",
-              "RelativeToolTip": "APICatalogo\\Repositories\\IProdutoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T16:34:19.552Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProdutoDTOMappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\DTOs\\Mappings\\ProdutoDTOMappingProfile.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\DTOs\\Mappings\\ProdutoDTOMappingProfile.cs",
-              "ToolTip": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\DTOs\\Mappings\\ProdutoDTOMappingProfile.cs",
-              "RelativeToolTip": "APICatalogo\\DTOs\\Mappings\\ProdutoDTOMappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T18:09:03.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProdutosController.cs",
-              "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Controllers\\ProdutosController.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\ProdutosController.cs",
-              "ToolTip": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Controllers\\ProdutosController.cs",
-              "RelativeToolTip": "APICatalogo\\Controllers\\ProdutosController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAjwCgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T18:07:56.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProdutoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\DTOs\\ProdutoDTO.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\DTOs\\ProdutoDTO.cs",
-              "ToolTip": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\DTOs\\ProdutoDTO.cs",
-              "RelativeToolTip": "APICatalogo\\DTOs\\ProdutoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T18:03:10.136Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
@@ -175,7 +114,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "APICatalogo\\Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAqwGIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T18:07:56.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProdutoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\DTOs\\ProdutoDTO.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\DTOs\\ProdutoDTO.cs",
+              "ToolTip": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\DTOs\\ProdutoDTO.cs",
+              "RelativeToolTip": "APICatalogo\\DTOs\\ProdutoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T18:03:10.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CategoriasController.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Controllers\\CategoriasController.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Controllers\\CategoriasController.cs",
@@ -183,12 +147,11 @@
               "RelativeToolTip": "APICatalogo\\Controllers\\CategoriasController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T18:46:12.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T18:46:12.774Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "CategoriaDTO.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\DTOs\\CategoriaDTO.cs",
               "RelativeDocumentMoniker": "APICatalogo\\DTOs\\CategoriaDTO.cs",
@@ -196,8 +159,7 @@
               "RelativeToolTip": "APICatalogo\\DTOs\\CategoriaDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T17:50:19.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-26T17:50:19.573Z"
             },
             {
               "$type": "Document",
@@ -214,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "CategoriaDTOMappingExtensions.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\DTOs\\Mappings\\CategoriaDTOMappingExtensions.cs",
               "RelativeDocumentMoniker": "APICatalogo\\DTOs\\Mappings\\CategoriaDTOMappingExtensions.cs",
@@ -222,12 +184,11 @@
               "RelativeToolTip": "APICatalogo\\DTOs\\Mappings\\CategoriaDTOMappingExtensions.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwCEAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T19:40:04.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-26T19:40:04.471Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Models\\Categoria.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Models\\Categoria.cs",
@@ -235,12 +196,11 @@
               "RelativeToolTip": "APICatalogo\\Models\\Categoria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T19:16:07.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T19:16:07.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Models\\Produto.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Models\\Produto.cs",
@@ -248,12 +208,11 @@
               "RelativeToolTip": "APICatalogo\\Models\\Produto.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T19:23:31.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T19:23:31.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Repositories\\Repository.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Repositories\\Repository.cs",
@@ -261,12 +220,11 @@
               "RelativeToolTip": "APICatalogo\\Repositories\\Repository.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T17:40:48.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T17:40:48.09Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Repositories\\IRepository.cs",
@@ -274,12 +232,11 @@
               "RelativeToolTip": "APICatalogo\\Repositories\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T17:34:10.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T17:34:10.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "ICategoriaRepository.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Repositories\\ICategoriaRepository.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Repositories\\ICategoriaRepository.cs",
@@ -287,12 +244,11 @@
               "RelativeToolTip": "APICatalogo\\Repositories\\ICategoriaRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T15:52:06.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T15:52:06.166Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Repositories\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Repositories\\IUnitOfWork.cs",
@@ -300,12 +256,11 @@
               "RelativeToolTip": "APICatalogo\\Repositories\\IUnitOfWork.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T18:46:02.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T18:46:02.034Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Repositories\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Repositories\\UnitOfWork.cs",
@@ -313,12 +268,11 @@
               "RelativeToolTip": "APICatalogo\\Repositories\\UnitOfWork.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwCUAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T18:51:52.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T18:51:52.274Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "20260204191350_MigracaoInicial.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Migrations\\20260204191350_MigracaoInicial.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Migrations\\20260204191350_MigracaoInicial.cs",
@@ -326,12 +280,11 @@
               "RelativeToolTip": "APICatalogo\\Migrations\\20260204191350_MigracaoInicial.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAgwEEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T19:13:50.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-04T19:13:50.155Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "CategoriaRepository.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Repositories\\CategoriaRepository.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Repositories\\CategoriaRepository.cs",
@@ -339,12 +292,11 @@
               "RelativeToolTip": "APICatalogo\\Repositories\\CategoriaRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T15:55:44.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T15:55:44.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "ProdutoRepository.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Repositories\\ProdutoRepository.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Repositories\\ProdutoRepository.cs",
@@ -352,12 +304,11 @@
               "RelativeToolTip": "APICatalogo\\Repositories\\ProdutoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T16:35:54.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T16:35:54.841Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Context\\AppDbContext.cs",
@@ -365,12 +316,11 @@
               "RelativeToolTip": "APICatalogo\\Context\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T17:44:23.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-04T17:44:23.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "20260204194027_PopulaProdutos.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Migrations\\20260204194027_PopulaProdutos.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Migrations\\20260204194027_PopulaProdutos.cs",
@@ -378,12 +328,11 @@
               "RelativeToolTip": "APICatalogo\\Migrations\\20260204194027_PopulaProdutos.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAEwBoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T19:40:27.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-04T19:40:27.232Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "20260204193224_PopulaCategorias.cs",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Migrations\\20260204193224_PopulaCategorias.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Migrations\\20260204193224_PopulaCategorias.cs",
@@ -391,12 +340,11 @@
               "RelativeToolTip": "APICatalogo\\Migrations\\20260204193224_PopulaCategorias.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T19:32:24.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-04T19:32:24.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "APICatalogo.csproj",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
               "RelativeDocumentMoniker": "APICatalogo\\APICatalogo.csproj",
@@ -404,12 +352,11 @@
               "RelativeToolTip": "APICatalogo\\APICatalogo.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-03T18:56:38.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T18:56:38.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\appsettings.json",
               "RelativeDocumentMoniker": "APICatalogo\\appsettings.json",
@@ -417,12 +364,11 @@
               "RelativeToolTip": "APICatalogo\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-03T18:36:20.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T18:36:20.488Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\ccfel\\OneDrive\\Meu Computador (Galaxy Book 4)\\Documents\\GitHub\\WEBAPI-ASPNET\\APICatalogo\\APICatalogo\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "APICatalogo\\Properties\\launchSettings.json",
@@ -430,8 +376,7 @@
               "RelativeToolTip": "APICatalogo\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-03T18:34:50.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T18:34:50.59Z"
             }
           ]
         }
